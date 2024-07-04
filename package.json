@@ -1,0 +1,28 @@
+{
+  "main": "lib/binding.js",
+  "dependencies": {
+    "node-addon-api": "^1.1.0"
+  },
+  "scripts": {
+    "test": "node --napi-modules ./test/test_binding.js"
+  },
+  "gypfile": true,
+  "name": "animal",
+  "version": "1.0.0",
+  "description": "Sample testing for napi-module using Animal class example",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaybarbhaiya/animal-napi-module.git"
+  },
+  "keywords": [
+    "node-native",
+    "n-api",
+    "node-addon-sample"
+  ],
+  "author": "Jay Barbhaiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaybarbhaiya/animal-napi-module/issues"
+  },
+  "homepage": "https://github.com/jaybarbhaiya/animal-napi-module#readme"
+}
