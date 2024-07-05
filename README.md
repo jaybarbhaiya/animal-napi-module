@@ -12,6 +12,6 @@ This repository makes use of basic `Animal` class.
 - Clone the repo
 - Execute `npm i` in the directory where the repo is cloned. This build the project
 
-> Incase of errors please refer to the link above in the `Prerequisites` section.
+> Incase of errors, please refer to the `Prerequisites` section from the above link.
 
 - Execute `npm test` to validate that the build was successful.
