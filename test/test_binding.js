@@ -3,15 +3,18 @@ const assert = require("assert");
 
 assert(Animal, "The expected module is undefined");
 
-function testBasic()
-{
-    const instance = new Animal("mr-yeoman");
-    assert(instance.greet, "The expected method is not defined");
-    assert.strictEqual(instance.greet("kermit"), "mr-yeoman", "Unexpected value returned");
+function testBasic() {
+    const cat = new Animal("Cat", false);
+    assert(cat.getName, "The expected method is not defined");
+    assert.strictEqual(cat.getName(), "Cat", "Unexpected value returned");
+    assert.strictEqual(cat.canFly(), false, "Unexpected value returned");
+
+    const eagle = new Animal("Eagle", true);
+    assert.strictEqual(eagle.getName(), "Eagle", "Unexpected value returned");
+    assert.strictEqual(eagle.canFly(), true, "Unexpected value returned");
 }
 
-function testInvalidParams()
-{
+function testInvalidParams() {
     const instance = new Animal();
 }
 
